@@ -2,7 +2,7 @@ $day: #fff;
 $night: #37474F;
 $black: #000;
 
-@mixin circle-style{
+@mixin button-style{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -12,13 +12,17 @@ $black: #000;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 @mixin box-style{
   width: 100px;
   height: 50px;
-  margin: 360px;
   border-radius: 50px;
-  position: fixed;
 }
 
 body{
@@ -33,14 +37,15 @@ body{
   .box{
     @include box-style;
     border: 2px solid $night;
+    margin: 20% auto;
 
 
-    #circle{
-      @include circle-style;
+    button{
+      @include button-style;
       border-color: $night;
       background-color: $night;
-      margin-top: -1px;
-      margin-left: -1px;
+      margin-top: 0;
+      margin-left: -2px;
 
       &:hover{
         cursor: pointer;
@@ -56,13 +61,17 @@ body{
   .box {
     @include box-style;
     border: 2px solid $day;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto;
 
-    #circle2 {
-      @include circle-style;
+
+    button {
+      @include button-style;
       border-color: $day;
       background-color: $day;
-      margin-top: -1px;
-      margin-left: 50px;
+      margin-top: 0;
+      margin-left: 52px;
 
       &:hover {
         cursor: pointer;

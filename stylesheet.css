@@ -7,27 +7,32 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #fff;
 }
 #container .box {
   width: 100px;
   height: 50px;
-  margin: 360px;
   border-radius: 50px;
-  position: fixed;
   border: 2px solid #37474F;
+  margin: 20% auto;
 }
-#container .box #circle {
+#container .box button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid;
   border-color: #37474F;
   background-color: #37474F;
-  margin-top: -1px;
-  margin-left: -1px;
+  margin-top: 0;
+  margin-left: -2px;
 }
-#container .box #circle:hover {
+#container .box button:hover {
   cursor: pointer;
 }
 
@@ -35,28 +40,35 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #37474F;
   display: none;
 }
 #container2 .box {
   width: 100px;
   height: 50px;
-  margin: 360px;
   border-radius: 50px;
-  position: fixed;
   border: 2px solid #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 20% auto;
 }
-#container2 .box #circle2 {
+#container2 .box button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid;
   border-color: #fff;
   background-color: #fff;
-  margin-top: -1px;
-  margin-left: 50px;
+  margin-top: 0;
+  margin-left: 52px;
 }
-#container2 .box #circle2:hover {
+#container2 .box button:hover {
   cursor: pointer;
 }
 

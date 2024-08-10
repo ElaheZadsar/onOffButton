@@ -1,14 +1,17 @@
 // import './stylesheet.scss';
 
-function showContainer2() {
-    document.getElementById('container').style.display = 'none';
-    document.getElementById('container2').style.display = 'block';
+const container = document.getElementById('container');
+const container2 = document.getElementById('container2');
+
+function onOffButtonClick() {
+    if (container.style.display === "none") {
+        container.style.display = "block";
+        container2.style.display = "none";
+    } else {
+        container.style.display = "none";
+        container2.style.display = "block";
+    }
 }
 
-function showContainer1() {
-    document.getElementById('container').style.display = 'block';
-    document.getElementById('container2').style.display = 'none';
-}
-
-document.addEventListener("click", showContainer2);
-document.addEventListener("click", showContainer1);
+document.getElementById("circle").addEventListener("click", onOffButtonClick);
+document.getElementById("circle2").addEventListener("click", onOffButtonClick);
